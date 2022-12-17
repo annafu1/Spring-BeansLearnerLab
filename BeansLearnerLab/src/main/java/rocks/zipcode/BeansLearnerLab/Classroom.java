@@ -1,15 +1,17 @@
 package rocks.zipcode.BeansLearnerLab;
 
-public class Classroom {
-    Instructors instructors;
-    Students students;
+import java.util.ArrayList;
 
-    public Classroom(Instructors instructors, Students students) {
+public class Classroom {
+    ArrayList<Instructors> instructors;
+    ArrayList<Students> students;
+
+    public Classroom(ArrayList<Instructors> instructors, ArrayList<Students> students) {
         this.instructors = instructors;
         this.students = students;
     }
 
     public void hostLecture(Teacher teacher, double numberOfHours) {
-        teacher.lecture(students,numberOfHours);
+        teacher.lecture((Iterable<? extends Learner>) students,numberOfHours);
     }
 }
