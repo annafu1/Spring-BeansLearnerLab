@@ -38,6 +38,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.3.7.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 	<build>
