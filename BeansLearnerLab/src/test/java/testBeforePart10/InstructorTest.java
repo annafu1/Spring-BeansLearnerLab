@@ -32,7 +32,7 @@ public class InstructorTest {
         instructor.lecture(studentList,10.00);
         double expected = 5.00;
         double actual = student1.getTotalStudyTime();
-        System.out.println("@"+ actual);
+        //System.out.println(actual);
         Assert.assertEquals(expected,actual);
     }
 
