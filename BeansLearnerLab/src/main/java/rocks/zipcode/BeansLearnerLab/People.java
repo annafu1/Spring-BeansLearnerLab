@@ -3,13 +3,19 @@ package rocks.zipcode.BeansLearnerLab;
 import java.util.ArrayList;
 
 public abstract class People<PersonType extends Person> implements Iterable<PersonType> {
-
-    ArrayList<PersonType> personList = new ArrayList<>();
+    private ArrayList<PersonType> personList = new ArrayList<>();
 
     public People(ArrayList<PersonType> personList) {
         this.personList = personList;
     }
 
+    public ArrayList<PersonType> getPersonList() {
+        return personList;
+    }
+
+    public void setPersonList(ArrayList<PersonType> personList) {
+        this.personList = personList;
+    }
     public void add(PersonType personType) {
         personList.add(personType);
     }

@@ -9,12 +9,14 @@ import java.util.ArrayList;
 public class StudentConfig {
 
     @Bean(name = "students")
-    public Students currentStudents(ArrayList<Student> currentCohort) {
+    public Students currentStudents() {
+        ArrayList<Student> currentCohort = new ArrayList<>();
         return new Students(currentCohort);
     }
 
     @Bean
-    public Students previousStudents(ArrayList<Student> previousCohort) {
+    public Students previousStudents() {
+        ArrayList<Student> previousCohort = new ArrayList<>();
         return new Students(previousCohort);
     }
 }

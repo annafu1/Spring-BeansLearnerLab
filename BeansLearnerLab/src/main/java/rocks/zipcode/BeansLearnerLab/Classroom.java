@@ -11,7 +11,7 @@ public class Classroom {
         this.students = students;
     }
 
-//    public void hostLecture(Teacher teacher, double numberOfHours) {
-//        teacher.lecture((Iterable<? extends Learner>) students,numberOfHours);
-//    }
+    public void hostLecture(Teacher teacher, double numberOfHours) {
+        teacher.lecture((Iterable<? extends Learner>) students,numberOfHours);
+    }
 }
